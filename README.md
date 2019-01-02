@@ -25,3 +25,7 @@ See [js/utils/plist.js](js/utils/plist.js) for example. It is implemented by doc
 ### Very simple JSON template engine
 
 See implementation in [js/utils/template.js](js/utils/template.js). You can find usage of it in [js/preview/index.js](js/preview/index.js)
+
+### Type check with jsdoc
+
+Checking types by Typescript without writing typescrit (describing types in jsdoc). See `tsc` script in [package.json](package.json) and [#1](https://github.com/isqua/termcolor/pull/1) pull request.
