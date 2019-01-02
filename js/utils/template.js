@@ -1,3 +1,7 @@
+/**
+ * @param {CS.TemplateData|CS.TemplateData[]} data
+ * @returns {HTMLElement|Node}
+ */
 const template = (data) => {
     if (data === null || data === void 0) {
         return document.createTextNode('');

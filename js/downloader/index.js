@@ -9,7 +9,7 @@ export default class Downloader {
     }
 
     /**
-     * @param {Array<Object>} files
+     * @param {Array<CS.FileInfo>} files
      */
     update(files) {
         const fragment = document.createDocumentFragment();
@@ -23,7 +23,7 @@ export default class Downloader {
     }
 
     /**
-     * @param {Object} fileinfo
+     * @param {CS.FileInfo} fileinfo
      * @returns {HTMLAnchorElement}
      */
     _createLink(fileinfo) {

@@ -1,3 +1,4 @@
+/** @type {Object<string,string>} */
 const SCHEME = {
     ANSI0:  'ANSI0', // Black
     ANSI1:  'ANSI1', // Red
@@ -25,6 +26,7 @@ const SCHEME = {
     BOLD: 'BOLD'
 };
 
+/** @type {Object<string,string>} */
 const COLORS = {
     R: 'R',
     G: 'G',
