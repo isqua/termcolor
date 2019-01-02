@@ -21,12 +21,13 @@ export default class iTerm extends AbstractApp {
     /**
      * @override
      * @param {string} text
-     * @returns {Map}
+     * @returns {CS.ColorScheme}
      */
     parse(text) {
         const parser = new DOMParser();
         const iTermDOM = parser.parseFromString(text, 'text/xml');
         const dict = iTermDOM.querySelector('dict');
+        /** @type {CS.ColorScheme} */
         const scheme = new Map();
 
         if (dict) {
@@ -45,7 +46,7 @@ export default class iTerm extends AbstractApp {
 
      /**
      * @override
-     * @param {Map} scheme
+     * @param {CS.ColorScheme} scheme
      * @returns {string}
      */
     stringify(scheme) {
@@ -79,9 +80,10 @@ export default class iTerm extends AbstractApp {
 
     /**
      * @param {Map<string,string>} map
-     * @returns {Map}
+     * @returns {CS.ColorData}
      */
     _convertValues(map) {
+        /** @type Object<String,Number> */
         let color = {};
 
         for (let [ name, val ] of map.entries()) {

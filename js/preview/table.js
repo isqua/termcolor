@@ -1,7 +1,8 @@
 import { bgs, fgs, getBackgroundClassName, getForegroundClassName } from './consts.js';
 
-/** @returns {Object} */
+/** @returns {CS.TemplateData} */
 const getTable = () => {
+    /** @type {CS.TemplateTag} */
     let table = {
         tag: 'table',
         classNames: [ 'terminal-table' ],
@@ -38,11 +39,19 @@ const getTable = () => {
     return table;
 }
 
+/**
+ * @param {CS.TemplateData|null} [content]
+ * @returns {CS.TemplateTag}
+ */
 const getTh = (content) => ({
     tag: 'th',
     content: [ { tag: 'span', content: [ content ] } ]
 });
 
+/**
+ * @param {CS.TemplateData} content
+ * @returns {CS.TemplateTag}
+ */
 const getTr = (content) => ({
     tag: 'tr',
     content: [ content ]

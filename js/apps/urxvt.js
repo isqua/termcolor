@@ -17,7 +17,7 @@ export default class iTerm extends AbstractApp {
 
      /**
      * @override
-     * @param {Map} scheme
+     * @param {CS.ColorScheme} scheme
      * @returns {string}
      */
     stringify(scheme) {

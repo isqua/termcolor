@@ -5,7 +5,7 @@ import Biject from '../utils/biject.js';
  */
 export default class AbstractApp {
     /**
-     * @param {Object} map
+     * @param {CS.BijectMap} map
      */
     constructor(map) {
         this.keys = new Biject(map);
@@ -62,7 +62,7 @@ export default class AbstractApp {
     /**
      * @abstract
      * @param {string} text
-     * @returns {Map} schema
+     * @returns {CS.ColorScheme} schema
      */
     parse(text) {
         return new Map();
@@ -70,7 +70,7 @@ export default class AbstractApp {
 
     /**
      * @abstract
-     * @param {Map} schema
+     * @param {CS.ColorScheme} schema
      * @returns {string}
      */
     stringify(schema) {

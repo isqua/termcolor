@@ -1,0 +1,23 @@
+{
+  "name": "colorator",
+  "version": "0.0.1",
+  "description": "Convert one terminal color scheme to another",
+  "main": "index.html",
+  "devDependencies": {
+    "typescript": "3.2.2"
+  },
+  "scripts": {
+    "tsc": "tsc -p .",
+    "test": "npm run tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isqua/colorator.git"
+  },
+  "author": "isqua <isqua@isqua.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isqua/colorator/issues"
+  },
+  "homepage": "https://github.com/isqua/colorator#readme"
+}

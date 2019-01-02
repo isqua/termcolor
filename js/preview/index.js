@@ -32,14 +32,14 @@ export default class TerminalPreview {
     }
 
     /**
-     * @param {Map} scheme
+     * @param {CS.ColorScheme} scheme
      */
     set scheme(scheme) {
         this.updateStyles(scheme);
     }
 
     /**
-     * @param {Map} scheme
+     * @param {CS.ColorScheme} scheme
      */
     updateStyles(scheme) {
         const styleNode = document.createElement('style');

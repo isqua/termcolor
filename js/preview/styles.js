@@ -4,12 +4,12 @@ import { bgs, fgs, getBackgroundClassName, getForegroundClassName } from './cons
 
 /**
  * @param {string} rootNode
- * @param {Map} scheme
- * @returns {Array<Array}
+ * @param {CS.ColorScheme} scheme
+ * @returns {Array<CS.StyleDeclaration>}
  */
 const generateStyles = (rootNode, scheme) => {
     /**
-     * @type {Array<Array>} styles
+     * @type {Array<CS.StyleDeclaration>} styles
      */
     let styleText = [];
 

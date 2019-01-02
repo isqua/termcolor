@@ -37,12 +37,14 @@ uploader.on('change', file => {
         return app !== AppConstructor && mayStringify;
     });
 
+    /** @type {CS.FileInfo[]} */
     const downloadItems = outputApps.map(App => {
         const app = new App();
         const filename = App.getFileName(title);
 
         const content = app.stringify(scheme);
 
+        /** @type {CS.FileInfo} */
         return {
             title: App.title,
             mimeType: App.mimeType,

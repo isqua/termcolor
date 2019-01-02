@@ -19,7 +19,7 @@ export default class Terminal extends AbstractApp {
     /**
      * @override
      * @param {string} text
-     * @returns {Map}
+     * @returns {CS.ColorScheme}
      */
     parse(text) {
         const parser = new DOMParser();
@@ -49,7 +49,7 @@ export default class Terminal extends AbstractApp {
 
     /**
      * @param {string} val
-     * @returns {Map}
+     * @returns {CS.ColorData}
      */
     _convertValues(val) {
         let colors = /\$classO[^\d]*([0-9.]+)\s([0-9.]+)\s([0-9.]+)/.exec(atob(val.replace(/\s+|\n/g, '')))
