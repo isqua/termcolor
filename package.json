@@ -4,11 +4,17 @@
   "description": "Convert one terminal color scheme to another",
   "main": "index.html",
   "devDependencies": {
+    "jasmine": "3.3.1",
+    "karma": "3.1.4",
+    "karma-firefox-launcher": "1.1.0",
+    "karma-jasmine": "2.0.1",
     "typescript": "3.2.2"
   },
   "scripts": {
     "tsc": "tsc -p .",
-    "test": "npm run tsc"
+    "karma:ci": "karma start karma.conf.js",
+    "karma:watch": "karma start karma.conf.js --auto-watch --no-single-run",
+    "test": "npm run tsc && npm run karma:ci"
   },
   "repository": {
     "type": "git",
